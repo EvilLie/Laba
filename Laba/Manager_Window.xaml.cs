@@ -22,7 +22,7 @@ namespace Laba
         public Manager_Window()
         {
             InitializeComponent();
-        }
+        } 
 
         private void CheckProduct_Button_Click(object sender, RoutedEventArgs e)
         {
