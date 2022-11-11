@@ -23,5 +23,17 @@ namespace Laba
         {
             InitializeComponent();
         }
+
+        private void CheckProduct_Button_Click(object sender, RoutedEventArgs e)
+        {
+            string message = "Здесь будет проверка наличия продукта на складе";
+            MessageBoxResult result = MessageBox.Show(message);
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            string message = "А здесь будет список продуктов на покупку, менеджер сможет менять заказ в случае его изменения";
+            MessageBoxResult result = MessageBox.Show(message);
+        }
     }
 }

@@ -19,6 +19,10 @@
                 <GradientStop Color="#FF887272" Offset="1"/>
             </LinearGradientBrush>
         </Grid.OpacityMask>
-        <Label Content="Вы вошли как клиент" HorizontalAlignment="Center" Margin="0,51,0,0" VerticalAlignment="Top" Height="38" Width="216" FontSize="20" Foreground="#FF9809C5"/>
+        <Label Content="Вы вошли как клиент" HorizontalAlignment="Left" Margin="310,70,0,0" VerticalAlignment="Top" Height="38" Width="216" FontSize="20" Foreground="#FF9809C5"/>
+        <Button x:Name="CreateOrder_Button" Content="Создать заказ" HorizontalAlignment="Left" Margin="28,210,0,0" VerticalAlignment="Top" Width="180" Height="36" FontSize="16" Click="CreateOrder_Button_Click"/>
+        <Button x:Name="OrderInfo_Button" Content="Информация о заказе" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="16" Width="180" Height="36" Click="OrderInfo_Button_Click" Margin="328,210,0,0"/>
+        <Button x:Name="PayOrder_Button" Content="Оплатить заказ" HorizontalAlignment="Left" Margin="595,210,0,0" VerticalAlignment="Top" FontSize="16" Width="180" Height="36" Click="PayOrder_Button_Click"/>
+        <Button x:Name="ChangeOrder_Button" Content="Изменить заказ" HorizontalAlignment="Left" Margin="328,329,0,0" VerticalAlignment="Top" FontSize="16" Width="180" Height="36" Click="ChangeOrder_Button_Click"/>
     </Grid>
 </Window>

@@ -23,5 +23,23 @@ namespace Laba
         {
             InitializeComponent();
         }
+
+        private void PaymentCheck_Button_Click(object sender, RoutedEventArgs e)
+        {
+            string message = "Здесь будет проверка оплаты заказа";          
+            MessageBoxResult result = MessageBox.Show(message);
+        }
+
+        private void CreatingAccount_Button_Click(object sender, RoutedEventArgs e)
+        {
+            string message = "Здесь будет логика создание счёта";
+            MessageBoxResult result = MessageBox.Show(message);
+        }
+
+        private void CreatingWaybill_Button_Click(object sender, RoutedEventArgs e)
+        {
+            string message = "Здесь будет логика создания накладной";
+            MessageBoxResult result = MessageBox.Show(message);
+        }
     }
 }

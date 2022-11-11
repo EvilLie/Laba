@@ -16,20 +16,20 @@ namespace Laba
         {
             Client_Window p = new Client_Window();
             p.Show();
-            Hide();
+            Close();
         }
 
         private void BuhButton_Click(object sender, RoutedEventArgs e)
         {
             Buh_Window p = new Buh_Window();
             p.Show();
-            Hide();
+            Close();
         }
         private void ManagerButton_Click(object sender, RoutedEventArgs e)
         {
             Manager_Window p = new Manager_Window();
             p.Show();
-            Hide();
+            Close();
         }
     }
 }

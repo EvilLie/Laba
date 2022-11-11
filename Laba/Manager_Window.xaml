@@ -14,6 +14,8 @@
     </Window.Background>
     <Grid>
         <Label Content="Вы вошли как менеджер" HorizontalAlignment="Center" Margin="0,33,0,0" VerticalAlignment="Top" FontSize="20" Foreground="#FF87088E" Height="41" Width="248"/>
+        <Button x:Name="CheckProduct_Button" Content="Проверка наличия товара на складе" HorizontalAlignment="Left" Margin="49,0,0,0" VerticalAlignment="Center" Width="200" Height="36" FontSize="16" Click="CheckProduct_Button_Click"/>
+        <Button x:Name="CreatingList_Button" Content="Создание списка покупок" Margin="551,0,49,0" VerticalAlignment="Center" Height="36" Click="Button_Click" FontSize="16"/>
 
     </Grid>
 </Window>
