@@ -10,7 +10,7 @@ namespace Laba
         public MainWindow()
         {
             InitializeComponent();
-        }
+        } 
 
         private void ClientButton_Click(object sender, RoutedEventArgs e)
         {
