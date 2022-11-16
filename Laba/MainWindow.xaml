@@ -9,11 +9,11 @@
     <Grid>
         <Grid.Background>
             <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                <GradientStop Color="Black"/>
-                <GradientStop Color="#FFF9E3E3" Offset="1"/>
+                <GradientStop Color="DarkBlue"/>
+                <GradientStop Color="Azure" Offset="1"/>
             </LinearGradientBrush>
         </Grid.Background>
-        <Label Content="Здравствуйте!" Height="58" Margin="0,41,0,0" VerticalAlignment="Top" Width="172" Background="#00000000" Foreground="#FF72059E" HorizontalAlignment="Center" FontSize="24"/>
+        <Label Content="Здравствуйте!" Height="58" Margin="0,41,0,0" VerticalAlignment="Top" Width="172" Background="#00000000" Foreground="#FFEFE600" HorizontalAlignment="Center" FontSize="24"/>
         <Label Content="Выберите должность:" HorizontalAlignment="Left" Margin="164,131,0,0" VerticalAlignment="Top" Width="204" FontSize="20" Height="65"/>
         <Button x:Name="ClientButton" Content="Клиент" HorizontalAlignment="Left" Margin="424,131,0,0" VerticalAlignment="Top" Height="36" Width="291" Background="#FFB1B0B0" FontSize="16" Click="ClientButton_Click"/>
         <Button x:Name="BuhButton" Content="Бухгалтер" HorizontalAlignment="Left" Margin="424,181,0,0" VerticalAlignment="Top" FontSize="16" Height="36" Width="291" Click="BuhButton_Click"/>

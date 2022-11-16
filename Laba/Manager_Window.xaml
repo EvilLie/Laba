@@ -8,12 +8,12 @@
         Title="ManagerWindow" Height="450" Width="800" MaxHeight="1080" MaxWidth="1680">
     <Window.Background>
         <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-            <GradientStop Color="Black"/>
-            <GradientStop Color="White" Offset="1"/>
+            <GradientStop Color="DarkBlue"/>
+            <GradientStop Color="Azure" Offset="1"/>
         </LinearGradientBrush>
     </Window.Background>
     <Grid>
-        <Label Content="Вы вошли как менеджер" HorizontalAlignment="Center" Margin="0,33,0,0" VerticalAlignment="Top" FontSize="20" Foreground="#FF87088E" Height="41" Width="248"/>
+        <Label Content="Вы вошли как менеджер" HorizontalAlignment="Center" Margin="0,33,0,0" VerticalAlignment="Top" FontSize="20" Foreground="#FFEFE600" Height="41" Width="248"/>
         <Button x:Name="CheckProduct_Button" Content="Проверка наличия товара на складе" HorizontalAlignment="Left" Margin="49,0,0,0" VerticalAlignment="Center" Width="200" Height="36" FontSize="16" Click="CheckProduct_Button_Click"/>
         <Button x:Name="CreatingList_Button" Content="Создание списка покупок" Margin="551,0,49,0" VerticalAlignment="Center" Height="36" Click="Button_Click" FontSize="16"/>
 
