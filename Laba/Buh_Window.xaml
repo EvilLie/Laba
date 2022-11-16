@@ -17,6 +17,7 @@
         <Button x:Name="PaymentCheck_Button" Content="Проверить оплату" HorizontalAlignment="Left" Margin="50,0,0,0" VerticalAlignment="Center" Width="180" Height="36" FontSize="16" Click="PaymentCheck_Button_Click"/>
         <Button x:Name="CreatingAccount_Button" Content="Создать счёт" HorizontalAlignment="Left" VerticalAlignment="Center" Width="180" Height="36" FontSize="16" Click="CreatingAccount_Button_Click" Margin="328,0,0,0"/>
         <Button x:Name="CreatingWaybill_Button" Content="Создать накладную" HorizontalAlignment="Left" Margin="594,0,0,0" VerticalAlignment="Center" FontSize="16" Width="180" Height="36" Click="CreatingWaybill_Button_Click"/>
+        <Button x:Name="Back_Button" Content="Назад" HorizontalAlignment="Left" Margin="0,10,0,0" VerticalAlignment="Top" Width="150" Height="30" Click="Back_Button_Click"/>
 
     </Grid>
 </Window>

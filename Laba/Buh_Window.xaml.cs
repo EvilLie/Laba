@@ -41,5 +41,12 @@ namespace Laba
             string message = "Здесь будет логика создания накладной";
             MessageBoxResult result = MessageBox.Show(message);
         }
+
+        private void Back_Button_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow mainWindow = new MainWindow();
+            this.Close();
+            mainWindow.Show();
+        }
     }
 }

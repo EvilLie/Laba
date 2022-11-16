@@ -24,5 +24,6 @@
         <Button x:Name="OrderInfo_Button" Content="Информация о заказе" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="16" Width="180" Height="36" Click="OrderInfo_Button_Click" Margin="328,210,0,0"/>
         <Button x:Name="PayOrder_Button" Content="Оплатить заказ" HorizontalAlignment="Left" Margin="595,210,0,0" VerticalAlignment="Top" FontSize="16" Width="180" Height="36" Click="PayOrder_Button_Click"/>
         <Button x:Name="ChangeOrder_Button" Content="Изменить заказ" HorizontalAlignment="Left" Margin="328,329,0,0" VerticalAlignment="Top" FontSize="16" Width="180" Height="36" Click="ChangeOrder_Button_Click"/>
+        <Button x:Name="Back_Button" Content="Назад" HorizontalAlignment="Left" Margin="0,10,0,0" VerticalAlignment="Top" Width="150" Height="30" FontSize="16" Click="Back_Button_Click"/>
     </Grid>
 </Window>

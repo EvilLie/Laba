@@ -14,9 +14,6 @@ using System.Windows.Shapes;
 
 namespace Laba
 {
-    /// <summary>
-    /// Interaction logic for Manager_Window.xaml
-    /// </summary>
     public partial class Manager_Window : Window
     {
         public Manager_Window()
@@ -34,6 +31,13 @@ namespace Laba
         {
             string message = "А здесь будет список продуктов на покупку, менеджер сможет менять заказ в случае его изменения";
             MessageBoxResult result = MessageBox.Show(message);
+        }
+
+        private void Back_Button_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow mainWindow = new MainWindow();
+            this.Close();
+            mainWindow.Show();
         }
     }
 }
