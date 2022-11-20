@@ -10,6 +10,7 @@ namespace Laba
         public MainWindow()
         {
             InitializeComponent();
+            DB.EstablishConnection();
         } 
 
         private void ClientButton_Click(object sender, RoutedEventArgs e)
