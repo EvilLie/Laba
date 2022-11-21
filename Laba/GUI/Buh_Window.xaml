@@ -1,0 +1,23 @@
+﻿<Window x:Class="Laba.Buh_Window"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Laba"
+        mc:Ignorable="d"
+        Title="BuhWindow" Height="448" Width="814" MaxHeight="1080" MaxWidth="1680">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="DarkBlue"/>
+                <GradientStop Color="Azure" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Label Content="Вы вошли как бухгалтер" HorizontalAlignment="Center" Margin="0,51,0,0" VerticalAlignment="Top" Height="42" Width="256" Foreground="#FFEFE600" FontSize="20"/>
+        <Button x:Name="PaymentCheck_Button" Content="Проверить оплату" HorizontalAlignment="Left" Margin="50,0,0,0" VerticalAlignment="Center" Width="180" Height="36" FontSize="16" Click="PaymentCheck_Button_Click"/>
+        <Button x:Name="CreatingAccount_Button" Content="Создать счёт" HorizontalAlignment="Center" VerticalAlignment="Center" Width="180" Height="36" FontSize="16" Click="CreatingAccount_Button_Click"/>
+        <Button x:Name="CreatingWaybill_Button" Content="Создать накладную" Margin="584,0,50,0" VerticalAlignment="Center" FontSize="16" Height="36" Click="CreatingWaybill_Button_Click"/>
+        <Button x:Name="Back_Button" Content="Назад" HorizontalAlignment="Left" Margin="0,10,0,0" VerticalAlignment="Top" Width="150" Height="30" Click="Back_Button_Click" FontSize="16"/>
+
+    </Grid>
+</Window>

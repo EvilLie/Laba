@@ -8,7 +8,6 @@ namespace Laba
 {
     internal class Storage
     {
-        
         private string adressStorage;
         private int idStorage;
         private List<Product> products;

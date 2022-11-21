@@ -1,0 +1,29 @@
+﻿<Window x:Class="Laba.Client_Window"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Laba"
+        mc:Ignorable="d"
+        Title="ClientWindow" Height="450" Width="800" MaxHeight="1080" MaxWidth="1680">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="DarkBlue"/>
+                <GradientStop Color="Azure" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Grid.OpacityMask>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="Black"/>
+                <GradientStop Color="#FF887272" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.OpacityMask>
+        <Label Content="Вы вошли как клиент" HorizontalAlignment="Center" Margin="0,70,0,0" VerticalAlignment="Top" Height="38" Width="216" FontSize="20" Foreground="#FFEFE600"/>
+        <Button x:Name="CreateOrder_Button" Content="Создать заказ" Margin="40,210,580,0" VerticalAlignment="Top" Height="36" FontSize="16" Click="CreateOrder_Button_Click" Width="180"/>
+        <Button x:Name="OrderInfo_Button" Content="Информация о заказе" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="16" Width="180" Height="36" Click="OrderInfo_Button_Click" Margin="0,210,0,0"/>
+        <Button x:Name="PayOrder_Button" Content="Оплатить заказ" Margin="580,210,40,0" VerticalAlignment="Top" FontSize="16" Height="36" Click="PayOrder_Button_Click" Width="180"/>
+        <Button x:Name="ChangeOrder_Button" Content="Изменить заказ" HorizontalAlignment="Center" Margin="0,329,0,0" VerticalAlignment="Top" FontSize="16" Width="180" Height="36" Click="ChangeOrder_Button_Click"/>
+        <Button x:Name="Back_Button" Content="Назад" HorizontalAlignment="Left" Margin="0,10,0,0" VerticalAlignment="Top" Width="150" Height="30" FontSize="16" Click="Back_Button_Click"/>
+    </Grid>
+</Window>

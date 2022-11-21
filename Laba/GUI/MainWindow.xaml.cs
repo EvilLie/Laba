@@ -5,13 +5,12 @@ using System.Windows.Input;
 
 namespace Laba
 {
-    
     public partial class MainWindow : Window
     {
-        
         public MainWindow()
-        {           
+        {
             InitializeComponent();
+            DB.EstablishConnection();
         } 
 
         private void ClientButton_Click(object sender, RoutedEventArgs e)
