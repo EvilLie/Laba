@@ -5,10 +5,8 @@ using System.Windows.Input;
 
 namespace Laba
 {
-    
     public partial class MainWindow : Window
     {
-        
         public MainWindow()
         {           
             InitializeComponent();

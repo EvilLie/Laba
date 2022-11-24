@@ -13,89 +13,53 @@ namespace Laba
 {
     internal class DB
     {
-        private static MySqlConnection connection;
-        private static MySqlDataReader reader = null;
-        private static DataTable dataTable;
-        private static MySqlDataAdapter dataAdapter;
-        public static void EstablishConnection()
+        private MySqlConnection conn;
+        private string server;
+        private string user;
+        private string pass;
+        private string db;      
+        public DB()
         {
-            try
-            {
-                MySqlConnectionStringBuilder builder = new MySqlConnectionStringBuilder();
-                builder.Server = "127.0.0.1";
-                builder.UserID = "root";
-                builder.Password = "TypicalDatabasePassword";
-                builder.Database = "storage";
-                builder.SslMode = MySqlSslMode.Disabled;
-                connection = new MySqlConnection(builder.ToString());
-                string message = "Database connection succesfull";
-                MessageBoxResult messageBoxResult = MessageBox.Show(message, "Connection", MessageBoxButton.OK);
-            }
-            catch (Exception)
-            {
-                string message = "Connection failed";
-                MessageBoxResult result = MessageBox.Show(message);
-            }
+            Initialize();
         }
-        private bool OpenConnection()
+        private void Initialize()
         {
-            try
-            {
-                connection.Open();
-                return true;
-            }
-            catch(Exception)
-            {
-                string message = "Can't open connection";
-                MessageBoxResult result = MessageBox.Show(message);
-                return false;
-            }
+            server = "localhost";
+            db = "storage";
+            user = "root";
+            pass = "TypicalDatabasePassword";
+            string connectionString;
+            connectionString = "Data Source=" + server + ";Database=" + db + ";User Id=" + user + ";Password=" + pass + ";SSL Mode=0";
+            conn = new MySqlConnection(connectionString);
         }
-        private bool CloseConnection()
+        public bool OpenConnection()
         {
             try 
             {
-                connection.Close();
+                conn.Open();
                 return true;
             }
-            catch
+            catch(MySqlException e)
             {
-                string message = "Can't close connection";
-                MessageBoxResult result = MessageBox.Show(message);
+                    switch (e.Number)
+                {
+                    case 0:
+                        MessageBoxResult result =  MessageBox.Show("Can't connect to the server");
+                        break;
+                    case 1045:
+                        MessageBoxResult result1 = MessageBox.Show("Invalid username/password, please try again");
+                        break;
+                }
                 return false;
             }
         }
-        public void Insert(int id)
+        public void CloseConnection()
         {
-            string query = "INSERT INTO tableinfo (name, age) VALUES('John Smith', '33')";
-            if (this.OpenConnection() == true)
-            {
-                MySqlCommand cmd = new MySqlCommand(query, connection);
-                cmd.ExecuteNonQuery();
-                CloseConnection();
-            }
+            conn.Close();
         }
-        public void Insert(string id)
+        public MySqlConnection GetConnection()
         {
-            string query = "INSERT INTO tableinfo (name, age) VALUES('John Smith', '33')";
-            if (this.OpenConnection() == true)
-            {
-                MySqlCommand cmd = new MySqlCommand(query, connection);
-                cmd.ExecuteNonQuery();
-                CloseConnection();
-            }
-        }
-        public void Update(int id)
-        {
-            string query = "UPDATE tableinfo SET name='Joe', age='22' WHERE name='John Smith'";
-            if (this.OpenConnection() == true)
-            {
-                MySqlCommand cmd = new MySqlCommand();
-                cmd.CommandText = query;
-                cmd.Connection = connection;
-                cmd.ExecuteNonQuery();
-                CloseConnection();
-            }
+            return conn;
         }
     }
 }
