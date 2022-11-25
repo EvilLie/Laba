@@ -14,10 +14,11 @@
             </LinearGradientBrush>
         </Grid.Background>
         <Label Content="Registration page" HorizontalAlignment="Center" Margin="0,60,0,0" VerticalAlignment="Top" FontSize="20" Width="300" Height="40" Foreground="White" HorizontalContentAlignment="Center"/>
-        <TextBox x:Name="LoginRegistrationTextBox" HorizontalAlignment="Center" Margin="0,177,0,0" TextWrapping="Wrap" Text="Login" VerticalAlignment="Top" Width="320" Height="40" FontSize="18" TextAlignment="Center" Background="#FF828282" Foreground="White"/>
-        <TextBox x:Name="PasswordRegistrationTextBox" HorizontalAlignment="Center" Margin="0,233,0,0" TextWrapping="Wrap" Text="Password" VerticalAlignment="Top" Width="320" Height="40" TextAlignment="Center" Background="#FF828282" Foreground="White" FontSize="18"/>
-        <Button x:Name="RegistrationButton" Content="Registrate" HorizontalAlignment="Center" Margin="0,308,0,0" VerticalAlignment="Top" Width="150" Height="40" FontSize="16" Click="RegistrationButton_Click"/>
+        <TextBox x:Name="LoginRegistrationTextBox" HorizontalAlignment="Center" Margin="0,151,0,0" TextWrapping="Wrap" Text="Login" VerticalAlignment="Top" Width="320" Height="40" FontSize="18" TextAlignment="Center" Background="#FF828282" Foreground="White"/>
+        <TextBox x:Name="PasswordRegistrationTextBox" HorizontalAlignment="Center" TextWrapping="Wrap" Text="Password" VerticalAlignment="Top" Width="320" Height="40" TextAlignment="Center" Background="#FF828282" Foreground="White" FontSize="18" Margin="0,207,0,0"/>
+        <Button x:Name="RegistrationButton" Content="Registrate" HorizontalAlignment="Center" Margin="0,326,0,0" VerticalAlignment="Top" Width="150" Height="40" FontSize="16" Click="RegistrationButton_Click"/>
         <Button x:Name="BackButton" Content="Back to login page" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="180" Height="36" FontSize="16" Click="BackButton_Click"/>
+        <TextBox x:Name="LicenseTextBox" HorizontalAlignment="Center" Margin="0,264,0,0" TextWrapping="Wrap" Text="License" VerticalAlignment="Top" Width="320" TextAlignment="Center" Foreground="White" Background="#FF828282" FontSize="18" Height="40"/>
 
     </Grid>
 </Window>
