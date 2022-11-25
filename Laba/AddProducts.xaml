@@ -1,0 +1,18 @@
+﻿<Window x:Class="Laba.AddProducts"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Laba"
+        mc:Ignorable="d"
+        Title="AddProducts" Height="680" Width="1080">
+    <Grid Background="#FF565656">
+        <DataGrid  Margin="0,123,525,0" Name="dtGrid"  ItemsSource = "{Binding}"/>
+        <Label Content="Products list" HorizontalAlignment="Center" Margin="0,40,0,0" VerticalAlignment="Top" Foreground="White" HorizontalContentAlignment="Center" Width="400" Height="50" FontSize="36"/>
+        <Button x:Name="AddProductButton" Content="Add new product" Margin="590,253,0,0" VerticalAlignment="Top" Height="60" FontSize="20" Width="450" HorizontalAlignment="Left" Click="AddProductButton_Click"/>
+        <TextBox x:Name="ProductNameTextBox" TextWrapping="Wrap" Text="Enter product name" TextAlignment="Center" Height="60" FontSize="20" Margin="590,123,40,481"/>
+        <TextBox x:Name="ProductColTextBox" HorizontalAlignment="Left" Margin="590,188,0,0" TextWrapping="Wrap" Text="Enter number of producrs " VerticalAlignment="Top" Width="220" Height="60" FontSize="20" TextAlignment="Center"/>
+        <TextBox x:Name="ProductCostTextBox" HorizontalAlignment="Left" Margin="820,188,0,0" TextWrapping="Wrap" Text="Enter product cost" VerticalAlignment="Top" Width="220" TextAlignment="Center" Height="60" FontSize="20"/>
+
+    </Grid>
+</Window>

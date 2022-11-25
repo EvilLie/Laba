@@ -14,9 +14,9 @@
     </Window.Background>
     <Grid>
         <Label Content="You are logged in as a manager" HorizontalAlignment="Center" Margin="0,33,0,0" VerticalAlignment="Top" FontSize="20" Foreground="#FFEFE600" Height="41" Width="320" HorizontalContentAlignment="Center"/>
-        <Button x:Name="CheckProduct_Button" Content="Сhecking the availability of goods in stock" HorizontalAlignment="Left" Margin="50,0,0,0" VerticalAlignment="Center" Width="320" Height="36" FontSize="16" Click="CheckProduct_Button_Click"/>
-        <Button x:Name="CreatingList_Button" Content="Creating goods list" Margin="430,0,50,0" VerticalAlignment="Center" Height="36" Click="Button_Click" FontSize="16" Width="320"/>
+        <Button x:Name="CreatingList_Button" Content="Creating goods list" Margin="430,0,50,0" VerticalAlignment="Center" Height="40" Click="Button_Click" FontSize="16" Width="320"/>
         <Button x:Name="Back_Button" Content="LogOut" HorizontalAlignment="Left" Margin="0,10,0,0" VerticalAlignment="Top" Width="150" Height="30" FontSize="16" Click="Back_Button_Click"/>
+        <Button x:Name="AddNewProductsButton" Content="Add new products into storage" HorizontalAlignment="Left" Margin="50,0,0,0" VerticalAlignment="Center" Width="320" Height="40" FontSize="16" Click="AddNewProductsButton_Click"/>
 
     </Grid>
 </Window>
