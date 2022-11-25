@@ -31,18 +31,38 @@ namespace Laba
             OpenProductList();
         }
 
-        
-
-        private void OpenProductList()
+        private void Update_DataTableButton_Click(object sender, RoutedEventArgs e)
         {
-            conn.OpenConnection();
+            dtGrid.ItemsSource = null;
+            dtGrid.Items.Clear();   
             sql = "SELECT * FROM products";
+            dataTable = new DataTable();
             command = new MySqlCommand(sql, conn.GetConnection());
             reader = command.ExecuteReader();
             dataTable.Load(reader);
             reader.Close();
             conn.CloseConnection();
             dtGrid.ItemsSource = dataTable.DefaultView;
+        }
+
+        private void BackButton_Click(object sender, RoutedEventArgs e)
+        {
+            Manager_Window manager_Window = new Manager_Window();
+            manager_Window.Show();
+            Close();
+        }
+
+        private void OpenProductList()
+        {
+                conn.OpenConnection();
+                sql = "SELECT * FROM products";
+                command = new MySqlCommand(sql,conn.GetConnection());
+                reader = command.ExecuteReader();
+                dataTable.Load(reader);
+                reader.Close();
+                conn.CloseConnection();
+                dtGrid.ItemsSource = dataTable.DefaultView;
+                 
         }
         private void AddProductButton_Click(object sender, RoutedEventArgs e)
         {
@@ -67,10 +87,6 @@ namespace Laba
                             if ((int)b == -1)
                             {
                                 MessageBoxResult result = MessageBox.Show("Troubles with database");
-                            }
-                            else
-                            {
-                                OpenProductList();
                             }
                         }
                         catch (MySqlException x)

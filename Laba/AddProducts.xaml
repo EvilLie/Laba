@@ -13,6 +13,8 @@
         <TextBox x:Name="ProductNameTextBox" TextWrapping="Wrap" Text="Enter product name" TextAlignment="Center" Height="60" FontSize="20" Margin="590,123,40,481"/>
         <TextBox x:Name="ProductColTextBox" HorizontalAlignment="Left" Margin="590,188,0,0" TextWrapping="Wrap" Text="Enter number of producrs " VerticalAlignment="Top" Width="220" Height="60" FontSize="20" TextAlignment="Center"/>
         <TextBox x:Name="ProductCostTextBox" HorizontalAlignment="Left" Margin="820,188,0,0" TextWrapping="Wrap" Text="Enter product cost" VerticalAlignment="Top" Width="220" TextAlignment="Center" Height="60" FontSize="20"/>
+        <Button x:Name="Update_DataTableButton" Content="Update product list" HorizontalAlignment="Left" Margin="590,318,0,0" VerticalAlignment="Top" Width="450" Height="60" FontSize="20" Click="Update_DataTableButton_Click"/>
+        <Button x:Name="BackButton" Content="Back" HorizontalAlignment="Left" Margin="0,10,0,0" VerticalAlignment="Top" Width="250" Height="40" FontSize="20" Click="BackButton_Click"/>
 
     </Grid>
 </Window>
