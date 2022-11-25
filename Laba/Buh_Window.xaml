@@ -13,11 +13,11 @@
                 <GradientStop Color="Azure" Offset="1"/>
             </LinearGradientBrush>
         </Grid.Background>
-        <Label Content="Вы вошли как бухгалтер" HorizontalAlignment="Center" Margin="0,51,0,0" VerticalAlignment="Top" Height="42" Width="256" Foreground="#FFEFE600" FontSize="20"/>
-        <Button x:Name="PaymentCheck_Button" Content="Проверить оплату" HorizontalAlignment="Left" Margin="50,0,0,0" VerticalAlignment="Center" Width="180" Height="36" FontSize="16" Click="PaymentCheck_Button_Click"/>
-        <Button x:Name="CreatingAccount_Button" Content="Создать счёт" HorizontalAlignment="Center" VerticalAlignment="Center" Width="180" Height="36" FontSize="16" Click="CreatingAccount_Button_Click"/>
-        <Button x:Name="CreatingWaybill_Button" Content="Создать накладную" Margin="584,0,50,0" VerticalAlignment="Center" FontSize="16" Height="36" Click="CreatingWaybill_Button_Click"/>
-        <Button x:Name="Back_Button" Content="Назад" HorizontalAlignment="Left" Margin="0,10,0,0" VerticalAlignment="Top" Width="150" Height="30" Click="Back_Button_Click" FontSize="16"/>
+        <Label Content="You are logged in as an accountant" HorizontalAlignment="Center" Margin="0,51,0,0" VerticalAlignment="Top" Height="42" Width="320" Foreground="#FFEFE600" FontSize="20" HorizontalContentAlignment="Center"/>
+        <Button x:Name="PaymentCheck_Button" Content="Check payment" HorizontalAlignment="Left" Margin="50,0,0,0" VerticalAlignment="Center" Width="180" Height="36" FontSize="16" Click="PaymentCheck_Button_Click"/>
+        <Button x:Name="CreatingAccount_Button" Content="Create bill" HorizontalAlignment="Center" VerticalAlignment="Center" Width="180" Height="36" FontSize="16" Click="CreatingAccount_Button_Click"/>
+        <Button x:Name="CreatingWaybill_Button" Content="Create waybill" Margin="584,0,50,0" VerticalAlignment="Center" FontSize="16" Height="36" Click="CreatingWaybill_Button_Click"/>
+        <Button x:Name="Back_Button" Content="LogOut" HorizontalAlignment="Left" Margin="0,10,0,0" VerticalAlignment="Top" Width="150" Height="30" Click="Back_Button_Click" FontSize="16"/>
 
     </Grid>
 </Window>

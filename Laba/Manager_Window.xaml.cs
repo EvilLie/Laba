@@ -35,9 +35,9 @@ namespace Laba
 
         private void Back_Button_Click(object sender, RoutedEventArgs e)
         {
-            MainWindow mainWindow = new MainWindow();
-            this.Close();
-            mainWindow.Show();
+            Login login = new Login();
+            login.Show();
+            Close();
         }
     }
 }

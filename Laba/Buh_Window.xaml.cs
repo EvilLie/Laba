@@ -14,9 +14,6 @@ using System.Windows.Shapes;
 
 namespace Laba
 {
-    /// <summary>
-    /// Interaction logic for Buh_Window.xaml
-    /// </summary>
     public partial class Buh_Window : Window
     {
         public Buh_Window()
@@ -44,9 +41,9 @@ namespace Laba
 
         private void Back_Button_Click(object sender, RoutedEventArgs e)
         {
-            MainWindow mainWindow = new MainWindow();
-            this.Close();
-            mainWindow.Show();
+            Login login = new Login();
+            login.Show();
+            Close();
         }
     }
 }
