@@ -55,7 +55,7 @@ namespace Laba
             }
             else
             {
-                sql = "SELECT username FROM users WHERE username = '" + username + "' AND password = '" + password + "'";
+                sql = "SELECT userrole FROM users WHERE username = '" + username + "' AND password = '" + password + "'";
                 if(conn.OpenConnection() == true)
                 {
                     try
@@ -68,9 +68,24 @@ namespace Laba
                         }
                         else
                         {
-                            MainWindow mainWindow = new MainWindow();
-                            mainWindow.Show();
-                            Close();
+                            if ((int)a == 2)
+                            {
+                                Buh_Window buh_Window = new Buh_Window();
+                                buh_Window.Show();
+                                Close();
+                            }
+                            else if ((int)a == 3)
+                            {
+                                Manager_Window manager_Window = new Manager_Window();
+                                manager_Window.Show();
+                                Close();
+                            }
+                            else
+                            {
+                                Client_Window client_Window = new Client_Window();
+                                client_Window.Show();
+                                Close();
+                            }
                         }
                     }
                     catch(MySqlException x)

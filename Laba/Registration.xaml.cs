@@ -5,7 +5,7 @@ namespace Laba
 {
     public partial class Registration : Window
     {
-        int userrole = 1;
+        private int userrole = 1;
         private string username, password, role, sql;
         private DB conn = new DB();
         private MySqlCommand command;
@@ -58,7 +58,7 @@ namespace Laba
                     }
                     else
                     {
-                        sql = "SELECT username FROM users WHERE username = '" + username + "' AND password = '" + password + "'";
+                        sql = "SELECT userrole FROM users WHERE username = '" + username + "' AND password = '" + password + "'";
                         try
                         {
                             command = new MySqlCommand(sql, conn.GetConnection());
@@ -69,10 +69,25 @@ namespace Laba
                             }
                             else
                             {
-                                MainWindow mainWindow = new MainWindow();
-                                mainWindow.Show();
                                 userrole = 1;
-                                Close();
+                                if((int)a == 2)
+                                {
+                                    Buh_Window buh_Window = new Buh_Window();
+                                    buh_Window.Show();
+                                    Close();
+                                }
+                                else if((int)a == 3)
+                                {
+                                    Manager_Window manager_Window = new Manager_Window();
+                                    manager_Window.Show();
+                                    Close();
+                                }
+                                else
+                                {
+                                    Client_Window client_Window = new Client_Window();
+                                    client_Window.Show();
+                                    Close();
+                                }                                
                             }
                         }
                         catch (MySqlException x)
